@@ -8,4 +8,5 @@ export default {
     presets: ['es2015-rollup'],
   })],
   format: 'cjs',
+  external: ['jsverify', '.'],
 }

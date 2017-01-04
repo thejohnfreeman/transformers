@@ -1,7 +1,8 @@
 import jsc from 'jsverify'
+import {get} from '.'
 
-describe('get', () => {
+describe('transformers', () => {
     jsc.property('get', 'json', (x) => {
-        return x === x
+        return get('property')({property: x}) === x
     })
 })
