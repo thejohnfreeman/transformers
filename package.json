@@ -4,7 +4,7 @@
   "description": "A suite of composable transformations.",
   "main": "transformers.js",
   "scripts": {
-    "test": "false # no tests",
+    "test": "rollup --config rollup.config.test.js && mocha test.js",
     "build": "rollup --config",
     "docs": "jsdoc2md index.js > README.md"
   },
@@ -13,6 +13,8 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
     "jsdoc-to-markdown": "^2.0.1",
+    "jsverify": "^0.7.4",
+    "mocha": "^3.2.0",
     "rollup": "^0.39.2",
     "rollup-plugin-babel": "^2.7.1"
   },
