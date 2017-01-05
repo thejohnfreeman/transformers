@@ -23,6 +23,7 @@ function at_(path, f, object) {
     if (path.length == 0) {
         return f(object)
     }
+    // TODO: Avoid copy if transformed value is identical.
     const copy = Array.isArray(object)
         ? object.slice()
         : Object.assign({}, object)
